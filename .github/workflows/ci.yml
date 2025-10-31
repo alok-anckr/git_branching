@@ -131,7 +131,15 @@ jobs:
           NEXT_PUBLIC_PRODUCT_NAME: "Your SaaS"
           NEXT_PUBLIC_SITE_TITLE: "Your SaaS - Home"
           NEXT_PUBLIC_SITE_DESCRIPTION: "Your SaaS Description"
-          # Add any other required env vars here
+          NEXT_PUBLIC_DEFAULT_LOCALE: en
+          NEXT_PUBLIC_DEFAULT_THEME_MODE: system
+          NEXT_PUBLIC_THEME_COLOR: "#ffffff"
+          NEXT_PUBLIC_THEME_COLOR_DARK: "#0a0a0a"
+          # Email configuration (required for build)
+          EMAIL_SENDER: "noreply@example.com"
+          # Supabase configuration (for build)
+          NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder_anon_key
           NODE_ENV: production
 
   # Job 5: CI Success Check
